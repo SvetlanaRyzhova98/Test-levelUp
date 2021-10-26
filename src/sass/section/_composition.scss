@@ -1,0 +1,101 @@
+.composition {
+  background: linear-gradient(to left, #595757, #a08369);
+}
+.wrapper_composition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title_composition {
+  font-size: 60px;
+  font-family: "Caveat", cursive;
+  text-shadow: 2px 4px 1px #d8cfcf40;
+  color: #6c295c;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .produt__img {
+    width: 150px;
+  }
+}
+.composition {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    max-width: 400px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+  }
+  &__img {
+    border: 2px solid $purple;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("/src/assets/evrioma.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.composition__item:nth-child(2) {
+  .composition__img {
+    background: url("/src/assets/cora.jpg");
+    background-position: right;
+    background-size: cover;
+  }
+}
+.composition__item:nth-child(3) {
+  .composition__img {
+    background: url("/src/assets/pant_maral.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+.composition__left {
+  .composition__item:nth-child(1) {
+    .composition__img {
+      background: url("/src/assets/sosna.jpg");
+      background-position: right;
+      background-size: cover;
+    }
+  }
+  .composition__item:nth-child(2) {
+    .composition__img {
+      background: url("/src/assets/zentel.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .composition__item:nth-child(3) {
+    .composition__img {
+      background: url("/src/assets/barbaris.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+.composition__info {
+  display: flex;
+  font-family: $caveat;
+  line-height: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 245px;
+  text-align: center;
+  .composition__title {
+    font-size: 30px;
+    color: $purple;
+  }
+  .composition__decs {
+    font-size: 23px;
+    color: wheat;
+  }
+}

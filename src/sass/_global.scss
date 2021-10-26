@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: $wrapper;
+  margin: 0 auto;
+  height: 100vh;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 20px 0 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 8px 6px 1px #d8cfcf5c;
+}
+
+.subtitle {
+  text-transform: lowercase;
+  font-size: 35px;
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+.btn {
+  margin: 0 auto;
+  border-radius: 30px;
+  color: #fff;
+  padding: 5px 31px;
+  background-color: #62125a;
+  border: none;
+  font-size: 36px;
+  font-family: "Caveat";
+  margin-bottom: 30px;
+}
