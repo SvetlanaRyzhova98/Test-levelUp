@@ -1,4 +1,6 @@
 import $ from "jquery";
+import "slick-carousel";
+
 function setVideoCenter() {
   var $box = $(".video-box");
   var height = $box.height();
@@ -25,4 +27,11 @@ function setVideoCenter() {
 $(function () {
   setVideoCenter();
   $(window).resize(setVideoCenter);
+});
+
+$(".reviews__sliders").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
 });

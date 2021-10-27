@@ -3,18 +3,22 @@
 *::before {
   box-sizing: border-box;
 }
-
+body {
+  background: linear-gradient(to left, #595757, #a08369);
+}
+section {
+  margin-bottom: 50px;
+}
 .wrapper {
   max-width: $wrapper;
   margin: 0 auto;
-  height: 100vh;
 }
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 100px;
   line-height: 1;
   font-weight: 700;
-  padding: 20px 0 10px;
+  padding: 20px 0 30px;
   text-align: center;
   color: #fff;
   text-shadow: 8px 6px 1px #d8cfcf5c;
@@ -23,7 +27,6 @@
 .subtitle {
   text-transform: lowercase;
   font-size: 35px;
-  font-family: "Caveat", cursive;
   color: #fff;
   font-weight: 500;
   text-align: center;
@@ -45,6 +48,53 @@
   background-color: #62125a;
   border: none;
   font-size: 36px;
-  font-family: "Caveat";
+  font-family: $caveat;
   margin-bottom: 30px;
+}
+.title_content {
+  font-size: 80px;
+  text-shadow: 2px 4px 1px #d8cfcf40;
+  color: #6c295c;
+  font-family: $caveat;
+}
+.title_wheat {
+  color: wheat;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .produt__img {
+    width: 150px;
+    height: 232px;
+    margin: 0 20px;
+  }
+}
+/*-------------MEDIA--------------*/
+@media (max-width: 1200px) {
+  .title {
+    font-size: calc(100vw * 0.07);
+  }
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: calc(100vw * 0.07);
+  }
+  .wrapper {
+    padding: 0 20px;
+  }
+  .btn {
+    padding: 5px 15px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 36px;
+  }
 }

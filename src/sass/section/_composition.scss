@@ -1,36 +1,20 @@
-.composition {
-  background: linear-gradient(to left, #595757, #a08369);
-}
 .wrapper_composition {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.title_composition {
-  font-size: 60px;
-  font-family: "Caveat", cursive;
-  text-shadow: 2px 4px 1px #d8cfcf40;
-  color: #6c295c;
-}
 
-.product {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .produt__img {
-    width: 150px;
-  }
-}
 .composition {
   &__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__item {
     display: flex;
     max-width: 400px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     justify-content: space-between;
   }
   &__img {
@@ -84,7 +68,6 @@
 }
 .composition__info {
   display: flex;
-  font-family: $caveat;
   line-height: 1;
   flex-direction: column;
   justify-content: space-around;
@@ -97,5 +80,34 @@
   .composition__decs {
     font-size: 23px;
     color: wheat;
+  }
+}
+/*-------------MEDIA--------------*/
+@media (max-width: 920px) {
+  .composition__container {
+    flex-direction: column;
+  }
+  .composition__right {
+    margin-bottom: 30px;
+  }
+  .composition__left {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .composition__img {
+    border: 1px solid #62125a;
+    width: 70px;
+    height: 70px;
+  }
+  .composition__item {
+    max-width: 315px;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+  .composition__info {
+    max-width: 200px;
+    padding-right: 15px;
   }
 }

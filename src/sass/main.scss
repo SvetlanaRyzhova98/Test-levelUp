@@ -1,8 +1,13 @@
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
 @import "./mixin/breakpoint";
 @import "fonts";
 @import "variables";
-@import "components";
 @import "reset";
 @import "global";
 @import "./section/promo";
 @import "./section/composition";
+@import "./section/reviews";
+@import "./section/description";
+@import "./section/order";

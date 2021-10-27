@@ -4,21 +4,22 @@
   "description": "landing",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/*.html --open -p 4040",
+    "dev": "parcel src/*.html  --open -p 4040",
     "build": "parcel build src/*.html --public-url ./",
     "watch": "parcel watch src/*.html --public-url ./"
   },
   "author": "svetlana",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@parcel/babel-plugin-transform-runtime": "^2.0.0",
-    "@parcel/transformer-sass": "^2.0.0",
-    "autoprefixer": "^10.3.7",
-    "parcel": "^2.0.0"
+    "@parcel/babel-plugin-transform-runtime": "2.0.0",
+    "@parcel/babel-preset-env": "^2.0.0",
+    "@parcel/transformer-babel": "^2.0.0",
+    "@parcel/transformer-sass": "2.0.0",
+    "autoprefixer": "10.3.7",
+    "parcel": "2.0.0"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }
