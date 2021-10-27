@@ -29,6 +29,11 @@
     font-size: 35px;
   }
 }
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+  color: wheat !important;
+}
 /*-------------MEDIA--------------*/
 @media (max-width: 1200px) {
   .reviews__sliders.slick-initialized.slick-slider {

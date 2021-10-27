@@ -50,6 +50,11 @@ section {
   font-size: 36px;
   font-family: $caveat;
   margin-bottom: 30px;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $yellow;
+  }
 }
 .title_content {
   font-size: 80px;
