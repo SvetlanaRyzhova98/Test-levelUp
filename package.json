@@ -2,7 +2,6 @@
   "name": "landing",
   "version": "1.0.0",
   "description": "landing",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html  --open -p 4040",
     "build": "parcel build src/*.html --public-url ./",

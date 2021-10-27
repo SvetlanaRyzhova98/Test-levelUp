@@ -63,7 +63,7 @@ typings/
 *.css.map
 
 # build dir
-dist/
+# dist/
 
 # Parcel cache
 .cache/

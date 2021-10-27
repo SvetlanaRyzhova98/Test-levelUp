@@ -2,6 +2,7 @@ import $ from "jquery";
 import "slick-carousel";
 import tippy from "tippy.js";
 
+// видео
 function setVideoCenter() {
   let $box = $(".video-box");
   let height = $box.height();
@@ -29,6 +30,7 @@ $(function () {
   setVideoCenter();
   $(window).resize(setVideoCenter);
 });
+
 //карусель
 $(".reviews__sliders").slick({
   infinite: true,
@@ -45,7 +47,6 @@ setInterval(() => {
   if (startTimeSec < 0) {
     startTimeSec = MIN_30;
   }
-
   const min = Math.floor(startTimeSec / 60);
   const ostatok = startTimeSec % 60;
   const sec = ostatok < 10 ? "0" + ostatok : ostatok;
@@ -60,6 +61,7 @@ $(".scroll-button").on("click", function () {
     2000
   );
 });
+
 //подсказки
 tippy(".name-input", {
   content: "Пример: Анастасия Киселева",
